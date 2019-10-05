@@ -1,0 +1,39 @@
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
+%|                                               |%
+%| By: Jeremy Lilly                              |%
+%| 10/5/19                                        |%
+%|                                               |%
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%
+
+
+\mode<presentation>
+
+
+\RequirePackage{iftex}
+
+\ifLuaTeX
+    \RequirePackage{fontspec}
+\else
+    \ifXeTeX
+        \RequirePackage{fontspec}
+    \else
+        \RequirePackage[utf8]{inputenc}
+        \RequirePackage[T1]{fontenc}
+    \fi
+\fi
+
+
+\RequirePackage{parskip}
+\RequirePackage{tikz}
+\RequirePackage{bookmark}
+\RequirePackage{graphicx}
+
+\usecolortheme{OSU}
+\usefonttheme{OSU}
+\useinnertheme{OSU}
+\useoutertheme{OSU}
+
+\newcommand{\department}[1]{\def\insertdepartment{#1}}
+
+
+\mode<all>
