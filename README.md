@@ -8,7 +8,7 @@ _A custom Beamer theme for Oregon State University._
 
 ## Usage
 
-To use, place all five `.sty` files and the `images` directory into your working directory and add
+To use, place all five `.sty` files and the `osu_theme_images` directory into your working directory and add
 
 `\usetheme{OSU}`
 
