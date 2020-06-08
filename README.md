@@ -8,7 +8,7 @@ _A custom Beamer theme for Oregon State University._
 
 ## Usage
 
-To use, place all five `.sty` files and the `images` directory into your working directory and add
+To use, place all five `.sty` files and the `osu_theme_images` directory into your working directory and add
 
 `\usetheme{OSU}`
 
@@ -39,7 +39,13 @@ For example:
 \titlegraphic{\includegraphics[scale=0.05]{images/placeholder.png}}
 ```
 
-Note that not all these must be defined. The user may define whichever they like, and the document will change appearance accordingly.  
+**Note:** Not all these must be defined. The user may define whichever they like, and the document will change appearance accordingly.
+
+**Note:** When using `\titlegraphic`, the user may need to edit the position of the title on the title slide manually depending on the size and shape of the title graphic. This can be done by editing line 30 of `beamerinnerthemeOSU.sty`:
+
+```latex
+\node[text centered, text width=14cm, osu_orange] (title) at (\paperwidth/2, <CHANGE_HERE>) {\usebeamerfont{title}\inserttitle\\ \medskip\usebeamerfont{subtitle}\textcolor{osu_black}{\insertsubtitle}};
+```
 
 ## Compilation
 

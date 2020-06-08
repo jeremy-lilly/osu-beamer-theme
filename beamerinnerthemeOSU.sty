@@ -14,7 +14,7 @@
     \begin{beamercolorbox}[wd=\paperwidth, ht=\paperheight]{title page}
         \begin{tikzpicture}
             \useasboundingbox[fill=white] (0, 0) rectangle(\paperwidth, \paperheight);
-            \node[inner sep=0pt] (logo) at (1.75, 0.5) {\includegraphics[scale=0.05]{images/big_osu_logo.jpg}};
+            \node[inner sep=0pt] (logo) at (1.75, 0.5) {\includegraphics[scale=0.05]{osu_theme_images/big_osu_logo.jpg}};
             \node[align=right, text width=5.75cm] (institute) at (9.7, 0.5) {\usebeamerfont{institute}\insertinstitute};
             \ifx\insertdepartment\@null%
                 % nothing
@@ -23,7 +23,7 @@
                 \node[anchor=west, text width=10cm] (institute) at (3.8, 0.5) {\usebeamerfont{department}\insertdepartment};
             \fi
             \ifx\inserttitlegraphic\@empty%
-                \node[text centered, text width=12cm, osu_orange] (title) at (\paperwidth/2, 6) {\usebeamerfont{title}\inserttitle\\ \medskip\usebeamerfont{subtitle}\textcolor{osu_black}{\insertsubtitle}};
+                \node[text centered, text width=14cm, osu_orange] (title) at (\paperwidth/2, 6) {\usebeamerfont{title}\inserttitle\\ \medskip\usebeamerfont{subtitle}\textcolor{osu_black}{\insertsubtitle}};
                 \node[text centered, text width=10cm] (author) at (\paperwidth/2, 3) {\usebeamerfont{author}\insertauthor\\ \medskip\usebeamerfont{date}\insertdate};
             \else
                 \node (graphic) at (\paperwidth/2, \paperheight/2) {\inserttitlegraphic};
