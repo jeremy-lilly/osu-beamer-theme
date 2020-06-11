@@ -2,7 +2,7 @@
 
 ## Description
 
-Author: Jeremy Lilly
+Authors: Jeremy Lilly, Michael Kupperman
 
 _A custom Beamer theme for Oregon State University._
 
@@ -41,18 +41,13 @@ For example:
 
 **Note:** Not all these must be defined. The user may define whichever they like, and the document will change appearance accordingly.
 
-**Note:** When using `\titlegraphic`, the user may need to edit the position of the title on the title slide manually depending on the size and shape of the title graphic. This can be done by editing line 30 of `beamerinnerthemeOSU.sty`:
-
-```latex
-\node[text centered, text width=14cm, osu_orange] (title) at (\paperwidth/2, <CHANGE_HERE>) {\usebeamerfont{title}\inserttitle\\ \medskip\usebeamerfont{subtitle}\textcolor{osu_black}{\insertsubtitle}};
-```
-
 ## Compilation
 
-This theme uses OSU's official fonts, and as such should be complied with **LuaLaTeX** or **XeLaTeX**. Further, `Georgia` and `Verdana` must be installed fonts for the document to compile.
+This theme uses OSU's official fonts, and as such should be complied with **LuaLaTeX** or **XeLaTeX**. Further, `Georgia` and `Verdana` must be installed fonts for the document to compile. 
+When compiled on most LaTeX IDEs the command on line 1 on main.tex will override the default compiler choice in favor of LuaLaTeX.
 
 However, if you do wish to compile with **pdfLaTeX**, you may do so, and the theme will use the LaTeX's default serif and sans-serif fonts in place of `Georgia` and `Verdana`.
-
+Simply remove line 1 from `main.tex`.
 ## Helpful Resources
 
 - [An Introduction to Beamer](https://www.overleaf.com/learn/latex/Beamer_Presentations:_A_Tutorial_for_Beginners_(Part_1)%E2%80%94Getting_Started)
