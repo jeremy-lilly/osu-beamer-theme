@@ -36,14 +36,11 @@
       \end{beamercolorbox}}
    \else%
       \hbox{%
-      \begin{beamercolorbox}[wd=0.33\paperwidth, ht=0.25cm, dp=1ex]{palette primary}
-         \tiny\; \insertdate
-      \end{beamercolorbox}%
-      \begin{beamercolorbox}[wd=0.34\paperwidth, ht=0.25cm, dp=1ex]{palette primary}
-         \centering\tiny\insertshorttitle
-      \end{beamercolorbox}%
-      \begin{beamercolorbox}[wd=0.33\paperwidth, ht=0.25cm, dp=1ex]{palette primary}
-         \tiny\hfill \insertframenumber/\inserttotalframenumber \;
+      \begin{beamercolorbox}[wd=\paperwidth, ht=0.25cm, dp=1ex]{palette primary}
+          {\tiny
+          \;\hbox to 2cm{\insertdate\hfill}
+          \hfill\insertshorttitle\hfill
+          \hbox to 2cm{\hfill\insertframenumber/\inserttotalframenumber}\;}
       \end{beamercolorbox}}
   \fi
 }
